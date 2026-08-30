@@ -1,0 +1,332 @@
+:root {
+  --navy: #0c1b2a;
+  --navy-mid: #13283c;
+  --fog: #d7e3ee;
+  --fog-dim: #9fb3c6;
+  --card: #173049;
+  --line: #2a4a66;
+  --green: #7dcea0;
+  --amber: #e8c36a;
+  --red: #e07a7a;
+  --text: #eef4f8;
+  --muted: #9fb3c6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--navy);
+  color: var(--text);
+  font-family: "Segoe UI", system-ui, sans-serif;
+  line-height: 1.45;
+}
+
+body {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.25rem 1rem 3rem;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 0.35rem;
+  font-weight: 650;
+  letter-spacing: 0.01em;
+}
+
+h1 {
+  font-size: 1.7rem;
+}
+
+h2 {
+  font-size: 1.15rem;
+  color: var(--fog);
+  margin: 1.6rem 0 0.75rem;
+}
+
+h3 {
+  font-size: 1.05rem;
+}
+
+a {
+  color: #9fd0f5;
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.7rem;
+  color: var(--fog-dim);
+}
+
+.site-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.header-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+}
+
+.clock,
+.refresh-stamp,
+.muted {
+  color: var(--muted);
+  margin: 0;
+}
+
+button {
+  background: transparent;
+  color: var(--fog);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.35rem 0.85rem;
+  cursor: pointer;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
+}
+
+.risk {
+  margin-top: 1.25rem;
+  padding: 0.9rem 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: var(--navy-mid);
+}
+
+.risk-label {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.risk strong {
+  display: block;
+  font-size: 1.25rem;
+  margin: 0.15rem 0 0.25rem;
+}
+
+.risk p {
+  margin: 0;
+}
+
+.risk-green {
+  border-color: #2f6b4c;
+  background: #123526;
+}
+
+.risk-amber {
+  border-color: #8a6b22;
+  background: #3a2f12;
+}
+
+.risk-red {
+  border-color: #8a3535;
+  background: #3a1518;
+}
+
+.risk-pending {
+  border-color: var(--line);
+}
+
+.hub-grid,
+.city-grid {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.panel {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 0.95rem 1rem 0.75rem;
+  min-height: 12rem;
+}
+
+.panel header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin-bottom: 0.6rem;
+}
+
+.panel-featured {
+  border-color: #3d6f93;
+}
+
+.panel-hero {
+  min-height: auto;
+}
+
+.status-chip,
+.sail-chip {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.15rem 0.55rem;
+  color: var(--fog);
+}
+
+.status-ok {
+  color: var(--green);
+  border-color: #2f6b4c;
+}
+
+.status-stale {
+  color: var(--amber);
+  border-color: #8a6b22;
+}
+
+.status-unavailable,
+.status-cancelled,
+.sail-cancelled {
+  color: var(--red);
+  border-color: #8a3535;
+}
+
+.sail-delayed,
+.status-amber {
+  color: var(--amber);
+  border-color: #8a6b22;
+}
+
+.panel-foot {
+  margin-top: 0.85rem;
+  padding-top: 0.55rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.wx-now {
+  font-size: 2rem;
+  font-weight: 650;
+  margin: 0 0 0.15rem;
+}
+
+.wx-grid,
+.stat-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.35rem 0.8rem;
+  font-size: 0.92rem;
+}
+
+.board {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.board th,
+.board td {
+  text-align: left;
+  padding: 0.28rem 0.35rem 0.28rem 0;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+.board th {
+  color: var(--muted);
+  font-weight: 550;
+}
+
+.city-card {
+  background: var(--navy-mid);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0.8rem 0.9rem;
+}
+
+.city-card h3 {
+  font-size: 0.95rem;
+}
+
+.city-temp {
+  font-size: 1.55rem;
+  font-weight: 650;
+  margin: 0.15rem 0;
+}
+
+.city-card p,
+.city-meta {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.hero-kicker {
+  margin: 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.hero-title {
+  font-size: 1.45rem;
+  margin: 0.2rem 0;
+}
+
+.countdown {
+  font-size: 1.05rem;
+  color: var(--amber);
+  margin: 0.2rem 0 0.5rem;
+}
+
+.fixture-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.8rem 0 0;
+}
+
+.fixture-list li {
+  display: grid;
+  gap: 0.15rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.fixture-list li.played {
+  opacity: 0.55;
+}
+
+.updates li {
+  margin-bottom: 0.45rem;
+}
+
+@media (min-width: 800px) {
+  .site-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .hub-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .city-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

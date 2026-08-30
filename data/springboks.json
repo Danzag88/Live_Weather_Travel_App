@@ -1,0 +1,133 @@
+{
+  "rightsMap": {
+    "Rugby's Greatest Rivalry": {
+      "ukBroadcaster": "Sky Sports",
+      "ukChannels": ["Sky Sports Action", "Sky Sports+"],
+      "ukStream": ["Sky Go", "NOW"]
+    },
+    "SANZAAR International": {
+      "ukBroadcaster": "Sky Sports",
+      "ukChannels": ["Sky Sports"],
+      "ukStream": ["Sky Go", "NOW"]
+    },
+    "Nations Championship": {
+      "ukBroadcaster": "ITV / ITVX",
+      "ukChannels": ["ITV", "ITV4"],
+      "ukStream": ["ITVX"]
+    }
+  },
+  "fixtures": [
+    {
+      "id": "sa-nz-t2-2026",
+      "kickoffUtc": "2026-08-29T15:10:00Z",
+      "home": "South Africa",
+      "away": "New Zealand",
+      "opponent": "New Zealand",
+      "venue": "DHL Stadium, Cape Town",
+      "competition": "Rugby's Greatest Rivalry",
+      "round": "Second Test",
+      "ukBroadcaster": "Sky Sports",
+      "ukChannels": ["Sky Sports Action", "Sky Sports+"],
+      "ukStream": ["Sky Go", "NOW"],
+      "broadcastNote": null
+    },
+    {
+      "id": "sa-nz-t3-2026",
+      "kickoffUtc": "2026-09-05T15:10:00Z",
+      "home": "South Africa",
+      "away": "New Zealand",
+      "opponent": "New Zealand",
+      "venue": "FNB Stadium, Johannesburg",
+      "competition": "Rugby's Greatest Rivalry",
+      "round": "Third Test",
+      "ukBroadcaster": "Sky Sports",
+      "ukChannels": ["Sky Sports Action", "Sky Sports+"],
+      "ukStream": ["Sky Go", "NOW"],
+      "broadcastNote": null
+    },
+    {
+      "id": "sa-nz-t4-2026",
+      "kickoffUtc": "2026-09-12T21:00:00Z",
+      "home": "South Africa",
+      "away": "New Zealand",
+      "opponent": "New Zealand",
+      "venue": "M&T Bank Stadium, Baltimore",
+      "competition": "Rugby's Greatest Rivalry",
+      "round": "Fourth Test",
+      "ukBroadcaster": "Sky Sports",
+      "ukChannels": ["Sky Sports Action", "Sky Sports+"],
+      "ukStream": ["Sky Go", "NOW"],
+      "broadcastNote": null
+    },
+    {
+      "id": "aus-sa-2026-09-27",
+      "kickoffUtc": "2026-09-27T09:30:00Z",
+      "home": "Australia",
+      "away": "South Africa",
+      "opponent": "Australia",
+      "venue": "Optus Stadium, Perth",
+      "competition": "SANZAAR International",
+      "round": "Test",
+      "ukBroadcaster": "Sky Sports",
+      "ukChannels": ["Sky Sports"],
+      "ukStream": ["Sky Go", "NOW"],
+      "broadcastNote": "Confirm Sky listing closer to the day."
+    },
+    {
+      "id": "ita-sa-2026-11-07",
+      "kickoffUtc": "2026-11-07T11:40:00Z",
+      "home": "Italy",
+      "away": "South Africa",
+      "opponent": "Italy",
+      "venue": "Allianz Stadium, Turin",
+      "competition": "Nations Championship",
+      "round": "Round 4",
+      "ukBroadcaster": "ITV / ITVX",
+      "ukChannels": ["ITV", "ITV4"],
+      "ukStream": ["ITVX"],
+      "broadcastNote": "Exact ITV1 vs ITV4 is published in the weekly listing."
+    },
+    {
+      "id": "fra-sa-2026-11-13",
+      "kickoffUtc": "2026-11-13T20:10:00Z",
+      "home": "France",
+      "away": "South Africa",
+      "opponent": "France",
+      "venue": "Stade de France, Paris",
+      "competition": "Nations Championship",
+      "round": "Round 5",
+      "ukBroadcaster": "ITV / ITVX",
+      "ukChannels": ["ITV", "ITV4"],
+      "ukStream": ["ITVX"],
+      "broadcastNote": "Exact ITV1 vs ITV4 is published in the weekly listing."
+    },
+    {
+      "id": "ire-sa-2026-11-21",
+      "kickoffUtc": "2026-11-21T16:40:00Z",
+      "home": "Ireland",
+      "away": "South Africa",
+      "opponent": "Ireland",
+      "venue": "Aviva Stadium, Dublin",
+      "competition": "Nations Championship",
+      "round": "Round 6",
+      "ukBroadcaster": "ITV / ITVX",
+      "ukChannels": ["ITV", "ITV4"],
+      "ukStream": ["ITVX"],
+      "broadcastNote": "Exact ITV1 vs ITV4 is published in the weekly listing."
+    },
+    {
+      "id": "nc-finals-2026",
+      "kickoffUtc": "2026-11-27T16:40:00Z",
+      "home": "South Africa",
+      "away": "TBC",
+      "opponent": "TBC (if they qualify)",
+      "venue": "Allianz Stadium, Twickenham",
+      "competition": "Nations Championship",
+      "round": "Finals weekend 27–29 Nov",
+      "ukBroadcaster": "ITV / ITVX",
+      "ukChannels": ["ITV", "ITV4"],
+      "ukStream": ["ITVX"],
+      "broadcastNote": "Kick-off and opponent depend on qualification and finals draw."
+    }
+  ]
+}

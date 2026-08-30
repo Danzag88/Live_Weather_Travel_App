@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Live Weather Travel — Jersey</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div>
+        <p class="eyebrow">Personal ops board</p>
+        <h1>Live Weather Travel</h1>
+      </div>
+      <div class="header-meta">
+        <p id="uk-clock" class="clock">UK time —</p>
+        <p id="last-refresh" class="refresh-stamp">Waiting for first load</p>
+        <button type="button" id="refresh-btn">Refresh now</button>
+      </div>
+    </header>
+
+    <section id="risk" class="risk risk-pending" aria-live="polite">
+      <span class="risk-label">Jersey travel risk</span>
+      <strong id="risk-level">Loading</strong>
+      <p id="risk-summary">Fetching Jersey weather and travel feeds.</p>
+    </section>
+
+    <section class="jersey-hub" aria-labelledby="jersey-heading">
+      <h2 id="jersey-heading">Jersey live hub</h2>
+      <div class="hub-grid">
+        <article id="panel-weather" class="panel" data-panel="weather">
+          <header>
+            <h3>Weather</h3>
+            <span class="status-chip" data-status>Loading</span>
+          </header>
+          <div class="panel-body"></div>
+          <footer class="panel-foot"></footer>
+        </article>
+
+        <article id="panel-airport" class="panel" data-panel="airport">
+          <header>
+            <h3>Airport EGJJ</h3>
+            <span class="status-chip" data-status>Loading</span>
+          </header>
+          <div class="panel-body"></div>
+          <footer class="panel-foot"></footer>
+        </article>
+
+        <article id="panel-harbour" class="panel" data-panel="harbour">
+          <header>
+            <h3>Harbour St Helier</h3>
+            <span class="status-chip" data-status>Loading</span>
+          </header>
+          <div class="panel-body"></div>
+          <footer class="panel-foot"></footer>
+        </article>
+
+        <article id="panel-dfds" class="panel panel-featured" data-panel="dfds">
+          <header>
+            <h3>DFDS Saint Malo ↔ St Helier</h3>
+            <span class="status-chip" data-status>Loading</span>
+          </header>
+          <div class="panel-body"></div>
+          <footer class="panel-foot"></footer>
+        </article>
+      </div>
+    </section>
+
+    <section class="cities" aria-labelledby="cities-heading">
+      <h2 id="cities-heading">Other cities</h2>
+      <div id="city-grid" class="city-grid">
+        <p class="muted">Loading forecasts…</p>
+      </div>
+    </section>
+
+    <section class="rugby" aria-labelledby="rugby-heading">
+      <h2 id="rugby-heading">Springboks on UK TV</h2>
+      <article id="rugby-hero" class="panel panel-hero">
+        <p class="muted">Loading fixtures…</p>
+      </article>
+      <ul id="rugby-list" class="fixture-list"></ul>
+    </section>
+
+    <script src="/static/app.js" defer></script>
+  </body>
+</html>
