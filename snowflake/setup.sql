@@ -1,0 +1,12 @@
+-- Optional Streamlit packaging. Recipients live in SHARED_DB.PUBLIC.EMAIL_RECIPIENTS.
+-- Run schema.sql first if the table or starter rows are not loaded yet.
+
+-- PUT file://streamlit_app.py @SHARED_DB.PUBLIC.STREAMLIT_STAGE OVERWRITE=TRUE;
+-- PUT file://environment.yml @SHARED_DB.PUBLIC.STREAMLIT_STAGE OVERWRITE=TRUE;
+--
+-- CREATE OR REPLACE STREAMLIT SHARED_DB.PUBLIC.RECIPIENT_ADMIN
+--   FROM '@SHARED_DB.PUBLIC.STREAMLIT_STAGE'
+--   MAIN_FILE = 'streamlit_app.py'
+--   QUERY_WAREHOUSE = 'COMPUTE_WH';
+--
+-- GRANT USAGE ON STREAMLIT SHARED_DB.PUBLIC.RECIPIENT_ADMIN TO ROLE <your_role>;

@@ -1,0 +1,6 @@
+name: live_weather_recipients
+channels:
+  - snowflake
+dependencies:
+  - streamlit
+  - snowflake-snowpark-python

@@ -28,6 +28,10 @@ Open [http://127.0.0.1:8000](http://127.0.0.1:8000).
 
 Do not commit API keys or `.env` files. Use a local env file and keep secrets out of git.
 
+## Email recipient admin (Snowflake)
+
+A Streamlit in Snowflake app manages who receives the dashboard by email. It populates `SHARED_DB.PUBLIC.EMAIL_RECIPIENTS`. Run [snowflake/schema.sql](snowflake/schema.sql) if you need the table or starter rows, then use [snowflake/streamlit_app.py](snowflake/streamlit_app.py) as the Streamlit main file.
+
 ## License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE).

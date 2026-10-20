@@ -1,0 +1,11 @@
+---
+description: Snowflake PAT connection, SQL, and email rules for this repository
+alwaysApply: true
+---
+
+Follow `CURSOR_RULES.md` at the repository root on every task. Read it before Snowflake, MCP, SQL, or email work.
+
+- Account `QNKEIAF-UH49076`, user `DANZAG88`, role `ACCOUNTADMIN`, warehouse `COMPUTE_WH`, database `SNOWFLAKE_LEARNING_DB`, schema `TEST_SNOWFLAKEDB`.
+- Read the PAT only from `SNOWFLAKE_PAT` in the gitignored `.env`. The Snowflake CLI reads the same secret from the gitignored `.secrets/snowflake_pat` file.
+- Never commit a PAT, password, or `.env`. Never put the token in `mcp.json`, README, or source.
+- Query Snowflake for real results. Use fully qualified names and always set `COMPUTE_WH`.

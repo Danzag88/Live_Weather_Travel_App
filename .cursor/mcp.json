@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "snowflake": {
+      "type": "stdio",
+      "command": "/usr/bin/python3",
+      "args": ["${workspaceFolder}/snowflake/mcp_stdio_proxy.py"],
+      "envFile": "${workspaceFolder}/.env",
+      "env": {
+        "MCP_REV": "2"
+      }
+    }
+  }
+}
