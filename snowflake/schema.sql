@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS SHARED_DB.PUBLIC.EMAIL_RECIPIENTS (
 COMMENT ON TABLE SHARED_DB.PUBLIC.EMAIL_RECIPIENTS IS
     'Email addresses that receive the Live Weather Travel dashboard and other integrations.';
 
--- Starter rows. Replace example.com addresses in Streamlit, or edit VALUES and re-run.
+-- Starter row. Re-running this MERGE does not remove other addresses.
 MERGE INTO SHARED_DB.PUBLIC.EMAIL_RECIPIENTS AS tgt
 USING (
     SELECT
@@ -39,36 +39,14 @@ USING (
         column9 AS SEND_DAYS
     FROM VALUES
         (
-            'owner@example.com',
+            'dazag888@gmail.com',
             'Dashboard owner',
             'ALL',
             'TO',
             TRUE,
-            'Primary inbox for the Jersey weather and travel email',
+            'Primary inbox for dashboard and data exception report email',
             'Live',
             'All',
-            'All'
-        ),
-        (
-            'family@example.com',
-            'Family',
-            'ALL',
-            'TO',
-            TRUE,
-            'Weekday ferry and airport summary',
-            'Live',
-            'All',
-            'Weekdays'
-        ),
-        (
-            'alerts@example.com',
-            'Disruption alerts',
-            'ALL',
-            'CC',
-            FALSE,
-            'Paused sample — resume in Streamlit for Amber/Red only',
-            'Live',
-            'Amber/Red',
             'All'
         )
 ) AS src

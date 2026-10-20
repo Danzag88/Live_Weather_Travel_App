@@ -12,10 +12,10 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
-ACCOUNT_HOST = "QNKEIAF-UH49076.snowflakecomputing.com"
+ACCOUNT_HOST = "AZBWVHR-QE89977.snowflakecomputing.com"
 MCP_URL = (
-    "https://QNKEIAF-UH49076.snowflakecomputing.com/api/v2/databases/"
-    "SNOWFLAKE_LEARNING_DB/schemas/TEST_SNOWFLAKEDB/mcp-servers/TEST_MCP_SERVER"
+    "https://AZBWVHR-QE89977.snowflakecomputing.com/api/v2/databases/"
+    "SNOWFLAKE_LEARNING_DB/schemas/TEST2/mcp-servers/LEARNING_MCP"
 )
 ROOT = Path(__file__).resolve().parents[1]
 TOKEN_FILE = ROOT / ".secrets" / "snowflake_pat"
